@@ -1,0 +1,82 @@
+﻿<Window x:Class="ColorMakerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorMakerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="450"
+        WindowStartupLocation="CenterScreen"
+        Background="#F1F5F9">
+    <Grid Margin="30">
+
+        <StackPanel>
+            <!--cim-->
+            <TextBlock Text="Color Maker"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Foreground="Black"/>
+            <TextBlock Text="Készíts saját színeket egyszerűen"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,25"/>
+
+            <Border x:Name="colorPreview"
+                    Height="200"
+                    Background="#3498DB"
+                    CornerRadius="20"
+                    BorderBrush="White"
+                    BorderThickness="5">
+
+                <TextBlock Text="SZÍN MINTA"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="White"/>
+                           
+                
+            </Border>
+            
+            <!--HEX-->
+            <TextBlock Text="HEX szín"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Margin="0.25.0.7"/>
+
+            <TextBox x:Name="txtColor"
+                     Text="#3498DB"
+                     FontSize="20"
+                     Padding="12"
+                     HorizontalAlignment="Center"/>
+
+            <Button Content="Szín alkalmazása"
+                    Height="50"
+                    Margin="0,15,0,8"
+                    FontSize="16"
+                    FontWeight="Bold"
+                    />
+
+            <Button Content="Random Szín"
+                    Height="50"
+                    FontSize="16"
+                    FontWeight="Bold"/>
+
+            <Border Background="White"
+                    CornerRadius="10"
+                    Margin="0,20,0,0"
+                    Padding="15">
+
+                <TextBlock x:Name="txtRGB"
+                           Text="RGB: 52, 152, 219"
+                           FontSize="16"
+                           HorizontalAlignment="Center"
+                           Foreground="Black"/>
+            </Border>
+
+
+        </StackPanel>
+        
+    </Grid>
+</Window>
