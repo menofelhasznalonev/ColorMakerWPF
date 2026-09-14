@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorMakerWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="450"
+        Title="MainWindow" Height="850" Width="450"
         WindowStartupLocation="CenterScreen"
         Background="#F1F5F9">
     <Grid Margin="30">
@@ -28,13 +28,15 @@
                     CornerRadius="20"
                     BorderBrush="White"
                     BorderThickness="5">
-
-                <TextBlock Text="SZÍN MINTA"
+                
+                
+                    
+             
+                <TextBlock x:Name="textColorPreview" Text="SZÍN MINTA"
                            HorizontalAlignment="Center"
                            VerticalAlignment="Center"
                            FontSize="24"
-                           FontWeight="Bold"
-                           Foreground="White"/>
+                           FontWeight="Bold"/>
                            
                 
             </Border>
@@ -43,7 +45,7 @@
             <TextBlock Text="HEX szín"
                        FontSize="14"
                        FontWeight="Bold"
-                       Margin="0.25.0.7"/>
+                       Margin="0,25,0,7"/>
 
             <TextBox x:Name="txtColor"
                      Text="#3498DB"
@@ -56,12 +58,12 @@
                     Margin="0,15,0,8"
                     FontSize="16"
                     FontWeight="Bold"
-                    />
+                    Click="ApplyColor_Click"/>
 
             <Button Content="Random Szín"
                     Height="50"
                     FontSize="16"
-                    FontWeight="Bold"/>
+                    FontWeight="Bold" Click="RandomColor_Click"/>
 
             <Border Background="White"
                     CornerRadius="10"
